@@ -34,3 +34,42 @@ const formatDate = (date = new Date()) => {
 }
 console.log(formatDate())
 */
+
+/*
+Exercise 3
+
+Every student receives a  in the inclusive range from  to .
+Any  less than  is a failing grade.
+Sam is a professor at the university and likes to round each student's  according to these rules:
+If the difference between the  and the next multiple of  is less than , round  up to the next multiple of .
+If the value of  is less than , no rounding occurs as the result will still be a failing grade.
+
+*/
+
+/*
+Solution:
+let numbers = [34,38,44,68,79,77];
+
+function gradingStudents (grades){
+    let result = [];
+
+    grades.forEach((grade) => {
+        if(grade < 38){
+            result.push(grade);
+        } else {
+            let nextMultipleOf5 = getTheNextMultiple(grade);
+            let difference = Math.abs(nextMultipleOf5 - grade);
+            difference <  3 
+            ? result.push(nextMultipleOf5) 
+            : result.push(grade);
+        }
+    });
+    return result;
+}
+function getTheNextMultiple(n){
+    let multiple = (Math.floor(n/5) +1) * 5;
+    return multiple
+}
+console.log(gradingStudents(numbers))
+*/
+
