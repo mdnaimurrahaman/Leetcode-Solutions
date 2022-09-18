@@ -130,6 +130,8 @@ Example-
 There are two each of types  and , and one sighting of type . Pick the lower of the two types seen twice: type .
  */
 
+/*
+
 let testarry = [2,2,2,2,4,5,5,8,9,1,5,1,8,4,5,1,2];
 
 function migratroyBirds(arr){
@@ -187,3 +189,23 @@ function migratroyBirds(arr){
 }
 
 console.log(migratroyBirds(testarry))
+*/
+
+
+/*
+Exercise 8
+----------
+Two Sum
+*/
+/*
+//Solution:
+ function towSum (numbers, target) {
+    for(let i = 0; i <= numbers.length; i++){
+        for(let num = i+1; num < numbers.length; num ++ ){
+            if(numbers[i] + numbers[num] == target){
+                return [i, num]
+            }
+        }
+    }
+}
+*/
