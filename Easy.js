@@ -369,13 +369,16 @@ var removeDuplicates = function(nums) {
 };
 */
 /*
-Exercise 
+Exercise 15
 ----------
-
+Remove Element || leet code problem
 */
 /*
-//Solution
-
+//Solution #2: .filter()
+var removeElement = function (nums, val) {
+    nums = nums.filter((num) => num !== val);
+    return nums.length;
+};
 */
 /*
 Exercise 
