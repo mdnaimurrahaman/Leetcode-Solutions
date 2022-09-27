@@ -381,13 +381,20 @@ var removeElement = function (nums, val) {
 };
 */
 /*
-Exercise 
+Exercise 16
 ----------
-
+Search Insert Position || Leet code problem
 */
 /*
-//Solution
-
+//Solution || The for loop
+var searchInsert = function (nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] >= target) {
+            return i;
+        }
+    }
+    return nums.length;
+};
 */
 /*
 Exercise 
